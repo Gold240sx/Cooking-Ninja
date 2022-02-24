@@ -60,10 +60,29 @@
     margin: 20px auto 0;
 }
 
-.recipe-list .card a:hover {
+/* .recipe-list .card a:hover {
     background-color: aquamarine;
+} */
+
+.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    filter: invert(80%);
 }
 
-.hoverColorActive {
-    background-color: orange !important;
+/* light mode */
+.recipe-list .card.dark {
+    background: #555;
+}
+
+.delete-darker {
+    filter: invert(20%);
+}
+
+.recipe-list .card.dark p,
+.recipe-list .card.dark h3,
+.recipe-list .card.dark div {
+    color: rgb(33, 33, 33);
 }
